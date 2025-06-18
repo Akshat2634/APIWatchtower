@@ -35,7 +35,7 @@ APIWatchtower enables organizations to proactively monitor their API endpoints, 
 
 1. **Clone the repo:**
     ```bash
-    git clone https://github.com/YOUR-ORG/APIWatchtower.git
+    git clone https://github.com/Akshat2634/APIWatchtower.git
     cd APIWatchtower
     ```
 
