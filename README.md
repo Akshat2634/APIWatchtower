@@ -24,10 +24,10 @@ APIWatchtower enables organizations to proactively monitor their API endpoints, 
 ## 🏗️ High-Level Architecture
 
 - **Backend:** Python (FastAPI)
-- **Worker/Queue:** Celery or RQ (for periodic checks and LLM tasks)
-- **Database:** PostgreSQL (logs, configs, endpoints)
+- **Worker/Queue:** pgqueuer (PostgreSQL-backed job queue for background tasks & scheduled checks)
+- **Database:** PostgreSQL (logs, configs, endpoints, and job queue)
 - **LLM Integration:** OpenAI, Claude, or Gemini APIs
-- **Frontend:** React (planned) or Streamlit (for MVP)
+- **Frontend:** Nextjs, React (planned) or Streamlit (for MVP)
 
 ---
 
