@@ -64,16 +64,4 @@ APIWatchtower enables organizations to proactively monitor their API endpoints, 
 
 ---
 
-## 🤝 Contributing
-
-Contributions are welcome! Please open issues and submit pull requests to help us make APIWatchtower even better.
-
----
-
-## 📄 License
-
-MIT License
-
----
-
 **APIWatchtower — Watch. Detect. Respond.**
