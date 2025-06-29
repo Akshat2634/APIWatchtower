@@ -1,0 +1,30 @@
+// prisma/schema.prisma
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+generator python_client {
+  provider             = "prisma-client-py"
+  interface            = "asyncio"
+  recursive_type_depth = "5"
+}
+
+
+model ApiEndpoint {
+  id               Int      @id @default(autoincrement())
+  name             String
+  url              String
+  method           String   // "GET", "POST", etc.
+  authType         String?  // "bearer", "basic", "apikey", or null
+  authValue        String?  // token or key (if any)
+  payload          Json?    // for POST/PUT, sample payload
+  expectedStatus   Int      // expected HTTP status code
+  expectedResponse Json?    // expected response structure or key fields to validate
+  createdAt        DateTime @default(now())
+}
